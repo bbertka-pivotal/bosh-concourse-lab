@@ -227,13 +227,6 @@ Finished    2017-07-10 17:55:30 UTC
 Duration    00:02:08
 
 Deployed 'concourse' to 'bosh2'
-bens-mbp-3:bosh-create bbertka$ bosh vms
-Acting as user 'admin' on 'bosh2'
-Deployment 'concourse'
-
-Director task 32
-
-Task 32 done
 ----
 
 == Access Concourse via Web
