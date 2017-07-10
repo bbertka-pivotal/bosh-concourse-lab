@@ -1,5 +1,6 @@
-= Deploy Concourse
-Now that you have a secondary BOSH environment running, its time to use it for something useful. This module will help you deploy a Bosh Managed Concourse cluster to AWS.
+= Deploy Concourse to your Bosh2 Environment in AWS
+
+Now that you have a secondary BOSH environment running (i.e. Bosh2), its time to use it for something useful. This module will help you deploy a Bosh Managed Concourse cluster to AWS.
 
 Please read official Concourse documentation for link:https://concourse.ci/clusters-with-bosh.html[Deploying a Bosh Concourse cluster]
 
@@ -7,7 +8,7 @@ Disclaimer: This repo is not a substitute for a properly designed tool, however 
 
 == Requirements
 * Bosh1 (eg PCF Bosh) and Bosh2 (via link:https://github.com/bbertka-pivotal/pcf-task-scheduler-demo[CF Tasks Lab])  Environments
-* SSL cert and keys for Concourse Web Portal
+* link:#generate-concourse-ssl-cert-and-keys[SSL cert and keys for Concourse Web Portal]
 * AWS Elastic Load Balancer configured for Concourse and SSL
 * AWS Route53 CName for Concouse ELB
 * Configured Bosh Cloud Config
