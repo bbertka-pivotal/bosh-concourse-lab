@@ -236,6 +236,17 @@ Director task 32
 Task 32 done
 ----
 
+== Access Concourse via Web
 . Access Concourse Web Interface (https://concourse.yourdomain.com)
+. Download the FLY CLI for your system
+. Target Concourse from the Command Line
++
+----
+$ fly -t aws login -c https://concourse.yourdomain.com -k
+user: concourse
+pass: changeme
+----
 
 == Congratulations you have deployed Concourse CI with your new Bosh Environment!
+
+== Check out some link:https://concourse.ci/tutorials.html[Concourse Tutorials]
