@@ -9,10 +9,9 @@ Disclaimer: This repo is not a substitute for a properly designed tool, however 
 == Requirements
 * Bosh1 (eg PCF Bosh) and Bosh2 (via link:https://github.com/bbertka-pivotal/pcf-task-scheduler-demo[CF Tasks Lab])  Environments
 * link:#generate-concourse-ssl-cert-and-keys[SSL cert and keys for Concourse Web Portal]
-* AWS Elastic Load Balancer configured for Concourse and SSL
-* AWS Route53 CName for Concouse ELB
-* Configured Bosh Cloud Config
-* Concourse BOSH Release and Deployment Manifest
+* link:#create-an-aws-load-balancer-for-concourse[AWS Elastic Load Balancer configured for Concourse and SSL]
+* link:#update-bosh2-cloud-config-for-concourse[Configured Bosh2 Cloud Config]
+* link:#create-a-concourse-bosh-deployment[Concourse BOSH Release and Deployment]
 
 == Generate Concourse SSL Cert and Keys
 . Update the link:./openssl.cnf[included openssl.cnf] file with your Route53 Domain names (eg. *.yourdomain.com, *.concourse.yourdomain.com)
@@ -74,7 +73,7 @@ $ aws iam get-server-certificate --server-certificate-name concourse-server-cert
 . Attach your previously uploded *concourse-server-certificate* to the SSL port 443 of _concourse-elb_
 . Create a Route53 entry for *concourse.yourdomain.com* and set CName to DNS of _concourse-elb_
 
-== Update Bosh2 Cloud Config for Concourse with Bosh1 confi
+== Update Bosh2 Cloud Config for Concourse
 . Target your original PCF Bosh Director and output Bosh1 Cloud Config 
 +
 ----
