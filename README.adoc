@@ -6,6 +6,7 @@ Please read official Concourse documentation for link:https://concourse.ci/clust
 Disclaimer: This repo is not a substitute for a properly designed tool, however could be utilized as a starting point.
 
 == Requirements
+* Bosh1 (eg PCF Bosh) and Bosh2 (via link:https://github.com/bbertka-pivotal/pcf-task-scheduler-demo[CF Tasks Lab])  Environments
 * SSL cert and keys for Concourse Web Portal
 * AWS Elastic Load Balancer configured for Concourse and SSL
 * AWS Route53 CName for Concouse ELB
@@ -72,8 +73,8 @@ $ aws iam get-server-certificate --server-certificate-name concourse-server-cert
 . Attach your previously uploded *concourse-server-certificate* to the SSL port 443 of _concourse-elb_
 . Create a Route53 entry for *concourse.yourdomain.com* and set CName to DNS of _concourse-elb_
 
-== Update Bosh Cloud Config for Concourse
-. Target your original PCF Bosh Director and output Bosh Cloud Config 
+== Update Bosh2 Cloud Config for Concourse with Bosh1 confi
+. Target your original PCF Bosh Director and output Bosh1 Cloud Config 
 +
 ----
 $ bosh target 10.0.10.1
