@@ -246,6 +246,6 @@ user: concourse
 pass: changeme
 ----
 
-== Congratulations you have deployed Concourse CI with your new Bosh Environment!
+== Congratulations you have deployed Concourse CI with Bosh!
 
 == Check out some link:https://concourse.ci/tutorials.html[Concourse Tutorials]
