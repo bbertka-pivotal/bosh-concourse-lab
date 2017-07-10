@@ -237,8 +237,7 @@ Task 32 done
 ----
 
 == Access Concourse via Web
-. Access Concourse Web Interface (https://concourse.yourdomain.com)
-. Download the FLY CLI for your system
+. Access Concourse Web Interface (https://concourse.yourdomain.com) and Download the FLY CLI for your system
 . Target Concourse from the Command Line
 +
 ----
