@@ -1,4 +1,4 @@
-= Lab2: Deploy Concourse to your Bosh2 Environment in AWS
+= Ops Lab2: Deploy Concourse via Bosh in AWS
 
 Now that you have completed link:https://github.com/bbertka-pivotal/pcf-task-scheduler-demo[Lab 1: Task Scheduler Demo] and have secondary BOSH environment running (i.e. Bosh2), its time to use it for something useful. This module will help you deploy a Bosh Managed Concourse cluster to AWS.
 
